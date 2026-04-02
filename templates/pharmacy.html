@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pharmacy - Aditya LifeCare Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Aditya <span>LifeCare</span></div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/pharmacy" class="active">Pharmacy</a>
+    </nav>
+</header>
+
+<section class="service-page">
+    <img src="{{ url_for('static', filename='images/HMS3.jpg') }}" alt="Hospital" height="400px",width="300px" style="border-radius: 28px;">
+
+    <h1>Hospital Pharmacy</h1>
+    <p>Our in-house pharmacy provides authentic medicines and healthcare products at affordable prices.</p>
+
+    <h3>Services We Offer</h3>
+    <ul>
+        <li>All types of prescription medicines</li>
+        <li>Emergency drug supply</li>
+        <li>Health supplements & medical devices</li>
+        <li>Home delivery support</li>
+    </ul>
+
+    <h3>Why Choose Our Pharmacy?</h3>
+    <p>We guarantee 100% genuine medicines under expert supervision with fast service.</p>
+</section>
+
+</body>
+</html>

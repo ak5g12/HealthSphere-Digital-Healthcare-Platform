@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aditya LifeCare Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Aditya <span>LifeCare</span></div>
+   <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</nav>
+</header>
+
+<p class="form-link">New user? 
+    <a href="/patient_register">Register here</a>
+</p>
+
+
+<section class="form-container">
+    <h2>Login</h2>
+
+    <form action="/save_login" method="POST">
+
+        <select class="input-box" name="role">
+            <option>Patient</option>
+            <option>Doctor</option>
+            <option>Admin</option>
+        </select>
+
+        <input type="email" class="input-box" name="username" placeholder="Email">
+        <input type="password" class="input-box" name="password" placeholder="Password">
+
+        <button class="btn full">Login</button>
+
+    </form>
+
+    <p class="form-link">New user? 
+        <a href="/patient_register">Register here</a>
+    </p>
+</section>
+
+
+</body>
+</html>

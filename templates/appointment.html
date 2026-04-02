@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment - Aditya LIFE Care</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Book Appointment</h1>
+
+<form action="/save_appointment" method="POST">
+
+    <input type="text" name="name" placeholder="Patient Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+
+
+    <select name="doctor">
+        <option>Dr. Sharma</option>
+        <option>Dr. Khan</option>
+        <option>Dr. Mehta</option>
+    </select>
+
+    <button type="submit">Book Appointment</button>
+</form>
+
+
+<a href="/">Back to Home</a>
+
+
+</body>
+</html>
+

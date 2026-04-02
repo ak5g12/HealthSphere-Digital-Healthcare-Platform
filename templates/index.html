@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">Aditya <span>LifeCare</span></div>
+
+    <!-- FIXED NAVBAR -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <a href="{{ url_for('login') }}">Login</a>
+    </nav>
+</header>
+
+
+<!-- 🔥 HERO SECTION FIXED -->
+<section class="hero" style="display:flex; align-items:center; justify-content:space-between; padding:50px; flex-wrap:wrap;">
+
+    <!-- LEFT TEXT -->
+    <div class="hero-text" style="max-width:500px;">
+        <h1 style="font-size:40px; color:#007BFF;">
+            Your Health, Our Responsibility
+        </h1>
+
+        <p style="margin-top:15px; color:#555;">
+            Experience world-class treatment with India’s most trusted medical team.
+        </p>
+
+        <p style="color:#555;">
+            Advanced medical technology, clean environment, and comfortable patient care.
+        </p>
+
+        <h3 style="color:red; margin-top:10px;">🚑 24/7 Emergency Care</h3>
+
+        <!-- BUTTONS FIX -->
+        <div style="margin-top:20px;">
+            <a href="{{ url_for('appointment') }}" 
+               style="padding:10px 20px; background:#007BFF; color:white; border-radius:6px; text-decoration:none; margin-right:10px;">
+               Appointment
+            </a>
+
+            <a href="{{ url_for('patient_register') }}" 
+               style="padding:10px 20px; background:green; color:white; border-radius:6px; text-decoration:none;">
+               Register Here
+            </a>
+        </div>
+    </div>
+
+
+    <!-- RIGHT IMAGE FIX -->
+    <div>
+        <img src="{{ url_for('static', filename='images/AI-Hospitals.jpg') }}" 
+             alt="Hospital"
+             style="width:400px; max-width:100%; border-radius:20px;">
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-cards">
+
+        <div class="card">
+            <div class="icon">🩺</div>
+            <h3><a href="{{ url_for('doctors') }}">Expert Doctors</a></h3>
+            <p>Highly qualified doctors available 24/7 for your care.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏥</div>
+            <h3><a href="{{ url_for('emergency') }}">Emergency Ward</a></h3>
+            <p>Quick medical response with advanced life support.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💊</div>
+            <h3><a href="{{ url_for('pharmacy') }}">Pharmacy</a></h3>
+            <p>Well-stocked medicines & medical supplies round the clock.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📅</div>
+            <h3><a href="{{ url_for('appointment') }}">Appointment</a></h3>
+            <p>Easy and fast appointment booking with any specialist.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- WHY US -->
+<section class="why-us">
+    <h2>Why Choose Aditya LifeCare Hospital?</h2>
+
+    <p class="why-text">
+        We are committed to providing compassionate, affordable, and advanced healthcare services. 
+        Our expert doctors and modern infrastructure ensure the best treatment experience for every patient.
+    </p>
+
+    <div class="features">
+
+        <div class="feature-box">
+            <h3>24/7 Emergency Care</h3>
+            <p>Round-the-clock emergency services with fully equipped ICUs and ambulances.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Expert Medical Team</h3>
+            <p>Highly experienced doctors and nurses delivering world-class medical care.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Modern Infrastructure</h3>
+            <p>Advanced medical technology, clean environment, and comfortable patient care.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2025 Aditya LifeCare Hospital | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

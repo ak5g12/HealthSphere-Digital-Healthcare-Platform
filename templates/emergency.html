@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Ward - Aditya LifeCare Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Aditya <span>LifeCare</span></div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/emergency" class="active">Emergency</a>
+    </nav>
+</header>
+
+<section class="service-page">
+    <img src="{{ url_for('static', filename='images/HMS2.jpg') }}" alt="Hospital" height="400px",width="300px" style="border-radius: 28px;">
+
+    <h1>Emergency Ward</h1>
+    <p>Our Emergency Ward is fully equipped with modern life-saving facilities and experienced medical staff working 24/7 to handle critical situations.</p>
+
+    <h3>Facilities Available</h3>
+    <ul>
+        <li>24/7 Ambulance Service</li>
+        <li>ICU & Trauma Care Unit</li>
+        <li>Immediate Doctor Response</li>
+        <li>Advanced Life Support System</li>
+    </ul>
+
+    <h3>Why Choose Our Emergency?</h3>
+    <p>We provide instant medical attention with trained specialists and world-class infrastructure to save lives.</p>
+</section>
+
+</body>
+</html>

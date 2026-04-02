@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration - Aditya LifeCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Aditya <span>LifeCare</span></div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/patient_register" class="active">Register</a>
+    </nav>
+</header>
+
+<section class="form-container">
+    <h2>Patient Registration</h2>
+
+    
+    <form action="/save_patient" method="POST">
+        <input type="text" class="input-box" name="name" placeholder="Full Name" required>
+        <input type="email" class="input-box" name="email" placeholder="Email" required>
+        <input type="text" class="input-box" name="phone" placeholder="Phone Number" required>
+        <input type="number" class="input-box" name="age" placeholder="Age" required>
+
+        <select class="input-box" name="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <input type="text" class="input-box" name="address" placeholder="Address" required>
+
+        <button type="submit" class="btn full">Register</button>
+    </form>
+    
+
+</section>
+
+</body>
+</html>
+

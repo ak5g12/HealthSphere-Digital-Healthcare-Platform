@@ -1,0 +1,2 @@
+Username: abc@12, Password: 123, Role: Patient
+Username: abc@12, Password: scrypt:32768:8:1$2ICUpprjxvlUgfMD$e9fd10db937879c617591e696a6c3407a66763539a3a1c8679a09d700bb5ff834b9c892d300d059724e80edb70440ccedd8e0dbcd981b12f828a7bda8c9e9dbb, Role: Patient

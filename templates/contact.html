@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aditya LifeCare Hospital</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Aditya <span>LifeCare</span></div>
+   <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+    <a href="{{ url_for('login') }}">Login</a>
+</nav>
+</header>
+
+<section class="contact-page">
+
+    <h2>Contact Us</h2>
+    <p>If you need help or want to book an appointment, contact us anytime.</p>
+
+    <div class="contact-box">
+        <p><strong>📞 Phone:</strong> +91 ......9876</p>
+        <p><strong>📍 Address:</strong> Aditya LifeCare Hospital, Sector 12, Mumbai</p>
+        <p><strong>✉ Email:</strong> support@lifecare.com</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Aditya LifeCare Hospital | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

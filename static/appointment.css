@@ -1,0 +1,82 @@
+/* PAGE BACKGROUND */
+body {
+    background: linear-gradient(135deg, #0acffe, #495aff);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* CENTER WRAPPER */
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN CARD */
+.appointment-card {
+    background: white;
+    width: 420px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+    animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.appointment-card h2 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* FORM ELEMENTS */
+form input, 
+form select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1.5px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #495aff;
+    box-shadow: 0 0 8px rgba(73,90,255,0.3);
+    outline: none;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #495aff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #3142ff;
+    box-shadow: 0 8px 22px rgba(73,90,255,0.4);
+}
+
